@@ -97,3 +97,10 @@ add_library(uv ${SOURCES})
 if(WIN32)
   target_link_libraries(uv ws2_32 psapi iphlpapi shell32 userenv)
 endif()
+
+if (BUILD_SHARED_LIBS)
+  target_compile_definitions(
+    uv
+    PRIVATE BUILDING_UV_SHARED
+    PUBLIC USING_UV_SHARED)
+endif()
