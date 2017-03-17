@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(LIBUVDIR libuv)
+set(LIBUVDIR libuv-1.8.0)
 
 include_directories(${LIBUVDIR}/include ${LIBUVDIR}/src)
 set(SOURCES
