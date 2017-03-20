@@ -106,7 +106,7 @@ if (BUILD_SHARED_LIBS)
 endif()
 
 install(TARGETS uv
-  EXPORT libuvTargets
+  EXPORT libuvConfig
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
@@ -114,4 +114,4 @@ install(TARGETS uv
 
 install(DIRECTORY ${LIBUVDIR}/include/ DESTINATION include)
 
-install(EXPORT libuvTargets DESTINATION lib/cmake/uv)
+install(EXPORT libuvConfig DESTINATION lib/cmake/uv)
