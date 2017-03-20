@@ -114,4 +114,4 @@ install(TARGETS uv
 
 install(DIRECTORY ${LIBUVDIR}/include/ DESTINATION include)
 
-install(EXPORT libuvConfig DESTINATION .)
+install(EXPORT libuvConfig DESTINATION lib/cmake/libuv)
