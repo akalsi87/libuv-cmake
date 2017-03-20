@@ -102,5 +102,5 @@ if (BUILD_SHARED_LIBS)
   target_compile_definitions(
     uv
     PRIVATE BUILDING_UV_SHARED
-    PUBLIC USING_UV_SHARED)
+    INTERFACE USING_UV_SHARED)
 endif()
